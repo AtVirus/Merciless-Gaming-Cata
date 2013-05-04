@@ -29,10 +29,9 @@ enum Datas
     DATA_LORD_RYOLITH           = 2,
     DATA_ALYSRAZAR              = 3,
     DATA_SHANNOX                = 4,
-    DATA_BALEROC                = 5,
+    DATA_BALOROC                = 5,
     DATA_MAJORDOMUS_STANGEHELM  = 6,
     DATA_RAGNAROS               = 7,
-	DATA_Crystal_Shard			= 8,
 };
 
 enum GameObjectIds
@@ -45,7 +44,6 @@ enum GameObjectIds
 
 enum CreatureIds
 {
-	NPC_SPIRIT_OF_THE_FLAME			= 52593,
     BOSS_RAGNAROS                   = 52409,
     NPC_SULFURAS_SMASH_TRIGGER      = 53266,
     NPC_SULFURAS_SMASH_TARGET       = 53268,
@@ -72,14 +70,6 @@ enum CreatureIds
     NPC_HARBINGER_OF_FLAME          = 53793,
 	NPC_MOLTEN_EGG_TRASH            = 53914,	
     NPC_SMOULDERING_HATCHLING       = 53794,
-	
-	NPC_Crystal_Shard				= 53495,
-
-	NPC_CRYSTAL_PRISON				= 53819,
-	NPC_CRYSTAL_TRAP				= 53713,
-	NPC_RIPLIMB						= 53694,
-	NPC_RAGEFACE					= 53695,
-	NPC_SHANNOX_SPEAR				= 123123,
 };
 
 class DelayedAttackStartEvent : public BasicEvent
@@ -97,6 +87,7 @@ class DelayedAttackStartEvent : public BasicEvent
         Creature* _owner;
 };
 
+/*
 template<class AI>
 CreatureAI* GetFirelandsAI(Creature* creature)
 {
@@ -106,5 +97,6 @@ CreatureAI* GetFirelandsAI(Creature* creature)
                 return new AI(creature);
     return NULL;
 }
+*/
 
 #endif // FIRELANDS_H_
